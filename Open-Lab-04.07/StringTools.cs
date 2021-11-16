@@ -6,7 +6,9 @@ namespace Open_Lab_04._07
     {
         public string Reverse(string original)
         {
-            throw new NotImplementedException();
+            char[] array = original.ToCharArray();
+            Array.Reverse(array);
+            return new string(array);
         }
     }
 }
